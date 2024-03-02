@@ -5,6 +5,308 @@
     })
 
 <body>
+    <div class="wrapper">
+        @@include('html/header.html')
+        <main class="page">
+            <section class="main-screen" id="main">
+                <div class="main-screen__overlay"></div>
+                <div class="container">
+                    <div class="main-screen__content">
+                        <h2 class="main-screen__title">High-Quality <br>Furniture <br>Just For You</h2>
+                        <div class="main-screen__text">Our furniture is made from selected and best quality materials that are suitable for your dream home</div>
+                        <a href="#" class="main-screen__link">Shop Now</a>
+                    </div>
+                    <div class="main-screen__galery gallery">
+                        <div class="gallery__nav">
+                            <div class="gallery__dots"></div>
+                            <div class="gallery__arrows"></div>
+                        </div>
+                        <div class="slider gallery-slider">
+                            <div class="gallery__item">
+                                <img data-lazy="@img/main_gallery_1.jpg" alt="gallery-item-1">
+                                <a href="#" class="gallery__infobox infobox">
+                                    <div class="infobox__title">Bohauss</div>
+                                    <div class="infobox__text">Luxury big sofa 2-seat</div>
+                                    <div class="infobox__price">Rp 17.000.000</div>
+                                </a>
+                            </div>
+                            <div class="gallery__item">
+                                <img data-lazy="@img/main_gallery_2.jpg" alt="gallery-item-2">
+                                <a href="#" class="gallery__infobox infobox">
+                                    <div class="infobox__title">Sofa</div>
+                                    <div class="infobox__text">Medium sofa 3-seat</div>
+                                    <div class="infobox__price">Rp 19.000.000</div>
+                                </a>
+                            </div>
+                            <div class="gallery__item">
+                                <img data-lazy="@img/main_gallery_3.jpg" alt="gallery-item-3">
+                                <a href="#" class="gallery__infobox infobox">
+                                    <div class="infobox__title">Bed</div>
+                                    <div class="infobox__text">Luxury big bed</div>
+                                    <div class="infobox__price">Rp 23.000.000</div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section class="advantages">
+                <div class="container">
+                    <div class="advantages__row">
+                        <div class="advantages__item">
+                            <div class="advantages__icon"><img src="@img/adv_1.svg" alt="trophy-icon"></div>
+                            <div class="advantages__information">
+                                <h4 class="advantages__title">High Quality</h4>
+                                <div class="advantages__text">crafted from top materials</div>
+                            </div>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantages__icon"><img src="@img/adv_t.svg" alt="guarantee-icon"></div>
+                            <div class="advantages__information">
+                                <h4 class="advantages__title">Warrany Protection</h4>
+                                <div class="advantages__text">Over 2 years</div>
+                            </div>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantages__icon"><img src="@img/adv_3.svg" alt="shipping-icon"></div>
+                            <div class="advantages__information">
+                                <h4 class="advantages__title">Free Shipping</h4>
+                                <div class="advantages__text">Order over 150 $</div>
+                            </div>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantages__icon"><img src="@img/adv_4.svg" alt="support-icon"></div>
+                            <div class="advantages__information">
+                                <h4 class="advantages__title">24 / 7 Support</h4>
+                                <div class="advantages__text">Dedicated support</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="products" id="products">
+                <div class="container">
+                    <div class="products__row">
+                        <h1 class="products__title title">Our Products</h1>
+                    </div>
+                    <div class="products__row products">
+                        <div class="products__column">
+                            <article class="products__item item-product discount" data-discount="35">
+                                <a href="#" class="item-product__img ibg"><img src="@img/product_1.jpg" alt="product-coffee-table"></a>
+                                <div class="item-product__information">
+                                    <h4 class="item-product__title">Syltherine</h4>
+                                    <div class="item-product__desc">Stylish coffee table</div>
+                                    <div class="item-product__price" data-price="5000000">Rp </div>
+                                </div>
+                                <div class="item-product__overlay">
+                                    <a class="item-product__buy">Add to cart</a>
+                                    <div class="item-product__save">
+                                        <div class="item-product__share"><img src="img/share.svg"> Share</div>
+                                        <div class="item-product__like"><img src="img/heart_w.svg"> Like</div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="products__column">
+                            <article class="products__item item-product discount" data-discount="30">
+                                <a href="#" class="item-product__img ibg"><img src="@img/product_2.jpg" alt="product-cafe-chair"></a>
+                                <div class="item-product__information">
+                                    <h4 class="item-product__title">Leviosa</h4>
+                                    <div class="item-product__desc">Stylish cafe chair</div>
+                                    <div class="item-product__price" data-price="3500000">Rp </div>
+                                </div>
+                                <div class="item-product__overlay">
+                                    <a class="item-product__buy">Add to cart</a>
+                                    <div class="item-product__save">
+                                        <div class="item-product__share"><img src="img/share.svg"> Share</div>
+                                        <div class="item-product__like"><img src="img/heart_w.svg"> Like</div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="products__column">
+                            <article class="products__item item-product discount" data-discount="50">
+                                <a href="#" class="item-product__img ibg"><img src="@img/product_3.jpg" alt="product-big-sofa"></a>
+                                <div class="item-product__information">
+                                    <h4 class="item-product__title">Lolito</h4>
+                                    <div class="item-product__desc">Luxury big sofa</div>
+                                    <div class="item-product__price" data-price="14000000">Rp </div>
+                                </div>
+                                <div class="item-product__overlay">
+                                    <a class="item-product__buy">Add to cart</a>
+                                    <div class="item-product__save">
+                                        <div class="item-product__share"><img src="img/share.svg"> Share</div>
+                                        <div class="item-product__like"><img src="img/heart_w.svg"> Like</div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="products__column">
+                            <article class="products__item item-product new">
+                                <a href="#" class="item-product__img ibg"><img src="@img/product_4.jpg" alt="product-minimalist-fan"></a>
+                                <div class="item-product__information">
+                                    <h4 class="item-product__title">Respira</h4>
+                                    <div class="item-product__desc">Minimalist fan</div>
+                                    <div class="item-product__price" data-price="500000">Rp </div>
+                                </div>
+                                <div class="item-product__overlay">
+                                    <a class="item-product__buy">Add to cart</a>
+                                    <div class="item-product__save">
+                                        <div class="item-product__share"><img src="img/share.svg"> Share</div>
+                                        <div class="item-product__like"><img src="img/heart_w.svg"> Like</div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <button class="products__footer">Show More</button>
+                </div>
+            </section>
+            <section class="inspiration" id="inspirations">
+                <div class="container">
+                    <div class="inspiration__row">
+                        <div class="inspiration__column inspiration__column_c">
+                            <div class="inspiration__content">
+                                <h2 class="inspiration__title title">50+ Beautiful rooms inspiration</h2>
+                                <div class="inspiration__text">Our designer already made a lot of beautiful prototipe of rooms that inspire you</div>
+                                <a href="#" class="inspiration__more">Explore More</a>
+                            </div>
+                        </div>
+                        <div class="inspiration__column">
+                            <div class="inspiration__ideas slider inspiration-slider">
+                                <div class="inspiration__idea idea-item">
+                                    <div class="idea-item__img ibg"><img src="@img/main_gallery_1.jpg" alt="inner-peace"></div>
+                                    <div class="idea-item__information">
+                                        <div class="idea-item__infobox infobox">
+                                            <div class="infobox__text">Bed Room</div>
+                                            <div class="infobox__title">Inner Peace</div>
+                                        </div>
+                                        <a href="" class="idea-item__go"><img src="@img/right_w.svg" alt="show-idea"></a>
+                                    </div>
+                                </div>
+                                <div class="inspiration__idea idea-item">
+                                    <div class="idea-item__img"><img style="filter: hue-rotate(125deg) grayscale(0) brightness(0.5)" src="@img/idea_1.jpg" alt="inner-peace"></div>
+                                    <div class="idea-item__information">
+                                        <div class="idea-item__infobox infobox">
+                                            <div class="infobox__text">Bed Room</div>
+                                            <div class="infobox__title">Inner Peace</div>
+                                        </div>
+                                        <a href="" class="idea-item__go"><img src="@img/right_w.svg" alt="show-idea"></a>
+                                    </div>
+                                </div>
+                                <div class="inspiration__idea idea-item">
+                                    <div class="idea-item__img"><img style="filter: hue-rotate(729deg) blur(2px)" src="@img/idea_1.jpg" alt="inner-peace"></div>
+                                    <div class="idea-item__information">
+                                        <div class="idea-item__infobox infobox">
+                                            <div class="infobox__text">Bed Room</div>
+                                            <div class="infobox__title">Inner Peace</div>
+                                        </div>
+                                        <a href="" class="idea-item__go"><img src="@img/right_w.svg" alt="show-idea"></a>
+                                    </div>
+                                </div>
+                                <div class="inspiration__idea idea-item">
+                                    <div class="idea-item__img"><img style="filter: hue-rotate(1156deg) contrast(0.2)" src="@img/idea_1.jpg" alt="inner-peace"></div>
+                                    <div class="idea-item__information">
+                                        <div class="idea-item__infobox infobox">
+                                            <div class="infobox__text">Bed Room</div>
+                                            <div class="infobox__title">Inner Peace</div>
+                                        </div>
+                                        <a href="" class="idea-item__go"><img src="@img/right_w.svg" alt="show-idea"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tips">
+                <div class="container">
+                    <div class="tips__row">
+                        <h2 class="tips__title title">Tips & Tricks</h2>
+                    </div>
+                    <div class="tips__row tips-slider slider">
+                        <div class="tips__column">
+                            <div class="tips__item item-tip">
+                                <div class="item-tip__img ibg"><img src="@img/main_gallery_1.jpg" alt="first-tip"></div>
+                                <div class="item-tip__information">
+                                    <h4 class="item-tip__title">How to create a living room to love</h4>
+                                    <div class="item-tip__time">20 jan 2020</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tips__column">
+                            <div class="tips__item item-tip">
+                                <div class="item-tip__img ibg"><img src="@img/tip_2.jpg" alt="first-tip"></div>
+                                <div class="item-tip__information">
+                                    <h4 class="item-tip__title">How to create a living room to love</h4>
+                                    <div class="item-tip__time">20 jan 2020</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tips__column">
+                            <div class="tips__item item-tip">
+                                <div class="item-tip__img ibg"><img src="@img/tip_3.jpg" alt="second-tip"></div>
+                                <div class="item-tip__information">
+                                    <h4 class="item-tip__title">Solution for clean look working space</h4>
+                                    <div class="item-tip__time">10 jan 2020</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tips__column">
+                            <div class="tips__item item-tip">
+                                <div class="item-tip__img ibg"><img src="@img/share_7.jpg" alt="third-tip"></div>
+                                <div class="item-tip__information">
+                                    <h4 class="item-tip__title">Make your cooking activity more fun with good setup</h4>
+                                    <div class="item-tip__time">20 jan 2020</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="share">
+                <div class="share__row">
+                    <div class="share__text">Share your setup with</div>
+                    <h2 class="share__title title">#FuniroFurniture</h2>
+                </div>
+                <div class="share__row share__row_g swiper share-slider">
+                    <div class="swiper-wrapper">
+                        <div class="share__column swiper-slide">
+                            <div class="share__subrow">
+                                <img src="@img/share_6.jpg" alt="share-7">
+                                <img src="@img/share_1.jpg" alt="share-1">
+                                <img src="@img/share_2.jpg" alt="share-2">
+                            </div>
+                            <div class="share__subrow share__subrow_btm">
+                                <div style="flex: 0 1 100%"></div>
+                                <img src="@img/share_9.jpg" alt="share-9">
+                                <img src="@img/share_3.jpg" alt="share-3">
+                                <img src="@img/share_4.jpg" alt="share-4">
+                            </div>
+                        </div>
+                        <div class="share__column share__column_s swiper-slide">
+                            <img src="@img/share_5.jpg" alt="share-5">
+                        </div>
+                        <div class="share__column swiper-slide">
+                            <div class="share__subrow">
+                                <img src="@img/share_6.jpg" alt="share-6">
+                                <img src="@img/share_7.jpg" alt="share-7">
+                                <img src="@img/share_3.jpg" alt="share-3">
+                            </div>
+                            <div class="share__subrow share__subrow_btm">
+                                <img src="@img/share_8.jpg" alt="share-8">
+                                <img src="@img/share_9.jpg" alt="share-9">
+                                <img src="@img/share_1.jpg" alt="share-1">
+                                <img src="@img/share_2.jpg" alt="share-2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('html/footer.html')
+    </div>
     <script src="js/app.min.js"></script>
 </body>
 </html>

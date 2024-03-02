@@ -1,0 +1,100 @@
+@import './swiper/swiper';
+@import './swiper/effect-cards';
+@import './swiper/effect-coverflow';
+@import './swiper/effect-cube';
+@import './swiper/effect-flip';
+@import './swiper/effect-fade';
+@import './swiper/pagination';
+@import './swiper/navigation';
+@import './swiper/a11y';
+@import './swiper/parallax';
+@import './swiper/scrollbar';
+
+
+
+
+
+.swiper-wrapper{
+    display: flex;   
+}
+
+
+.inspiration__control{
+    .swiper-pagination{
+        width: auto;
+        margin: 0 -10px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(20px);
+    }
+    .swiper-pagination-bullet.swiper-pagination-bullet-active{
+        background-color: $color---primary!important;
+        position: relative;
+        margin: 0 18px!important;
+
+        &::before{
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 27px;
+            height: 27px;
+            border: 1px solid $color---primary;
+            border-radius: 100%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+    }
+    .swiper-pagination-bullet{
+        transition: all ease-in-out 0.2s;
+        margin: 0 10px!important;
+        width: 11px;
+        height: 11px;
+        background-color: $color---gray-5;
+        opacity: 1;
+    }
+}
+
+
+.share-slider{
+    min-width: 0;
+    padding: 0 0 112px 0;
+    display: flex;
+    justify-content: start;
+    .swiper-slide{
+        width: auto
+    }
+}
+
+
+
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    &__prev, &__next{
+        width: 48px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 100%;
+        cursor: pointer;
+    }
+    &__prev::after, &__next::after{
+        content: '';
+        background-image: url('@img/slider_nav_arrow_orange.svg');
+        width: 24px;
+        height: 24px;
+
+    }
+    &__prev::after{
+        transform: rotate(180deg);
+    }
+}
+
+
