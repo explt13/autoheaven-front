@@ -68,8 +68,8 @@ if($('.gallery-slider').length > 0){
 
 }
 
-if ($('.inspiration-slider').length > 0){
-    $('.inspiration-slider').slick({
+if ($('.services-slider').length > 0){
+    $('.services-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
@@ -104,7 +104,7 @@ if ($('.inspiration-slider').length > 0){
 
     })
 
-    $('.inspiration-slider').on('beforeChange', (event, slick, currentSlide, nextSlide) => {
+    $('.services-slider').on('beforeChange', (event, slick, currentSlide, nextSlide) => {
         let nextIndex = currentSlide + 1;
         if(currentSlide-1 == nextSlide) {
             nextIndex = currentSlide - 1;
@@ -113,14 +113,14 @@ if ($('.inspiration-slider').length > 0){
         } else if (currentSlide === slick.slideCount - 1 && nextSlide === 0){
             nextIndex = slick.slideCount;
         }
-        $(`.inspiration-slider .idea-item[data-slick-index="${nextIndex}"]`).addClass('slick-target');
+        $(`.services-slider .idea-item[data-slick-index="${nextIndex}"]`).addClass('slick-target');
         $($(slick.$slides.get(currentSlide)).find('.idea-item__information').addClass('closing'))
         setTimeout(() => {
             $($(slick.$slides.get(currentSlide)).find('.idea-item__information').removeClass('closing'))
         }, 1500)
     });
 
-    $('.inspiration-slider').on('afterChange', () => {
+    $('.services-slider').on('afterChange', () => {
         $('.slick-slide').removeClass('slick-target');
     });
 }

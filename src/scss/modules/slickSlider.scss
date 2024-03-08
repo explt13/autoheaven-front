@@ -128,7 +128,7 @@
         }
         &.slick-active{
             button{
-                background-color: $color---primary;
+                background-color: $color---white;
                 position: relative;
 
                 margin: 0 8px;
@@ -141,7 +141,7 @@
                     width: 27px;
                     height: 27px;
                     position: absolute;
-                    border: 1px solid $color---primary;
+                    border: 1px solid $color---white;
                     border-radius: 100%;
                 }
             }
@@ -165,7 +165,7 @@
 }
 
 
-.inspiration-slider{
+.services-slider{
     .slick-list{
         height: 582px;
     }
@@ -177,7 +177,7 @@
         width: 100vw;
         height: 100%;
         z-index: 2;
-        background-color: #fcf8f3;
+        background-color: rgba(72, 78, 132, 1);
     }
     .slick-track{
         display: flex;
@@ -236,7 +236,7 @@
     }
 }
 
-.inspiration-slider,
+.services-slider,
 .tips-slider{
     .slick-arrow{
         position: absolute;

@@ -37,7 +37,7 @@ body{
 // -------------- MAIN-SCREEN --------- //
 
 .main-screen {
-    background: #fcf8f3;
+    background: rgba(72, 78, 132, 0.72);
     padding: 151px 0 0 0;
     position: relative;
     z-index: 0;
@@ -53,7 +53,7 @@ body{
         left: 0;
         width: 66.944%;
         height: 100%;
-        background: #f9f1e7;
+        background: $color---primary;
     }
     // .main-screen__content
     &__content {
@@ -63,14 +63,14 @@ body{
         position: absolute;
         z-index: 5;
         backdrop-filter: blur(31px);
-        background: rgba(255, 255, 255, 0.72);
+        background: rgba(60, 48, 84, 0.72);
     }
     // .main-screen__title
     &__title {
         font-weight: 700;
         font-size: 56px;
         line-height: 1.2;
-        color: $color---gray-1;
+        color: $color---white;
         &:not(:last-child){
             margin: 0 0 16px 0;
         }
@@ -81,7 +81,7 @@ body{
         font-weight: 500;
         font-size: 20px;
         line-height: 1.5;
-        color: $color---gray-3;
+        color: $color---gray-5;
         &:not(:last-child){
             margin: 0 0 48px 0;
         }
@@ -93,7 +93,7 @@ body{
         width: 100%;
         padding: 10px;
         min-height: 78px;
-        background: $color---primary;
+        background: $color---green-accents-link;
         font-weight: 600;
         font-size: 20px;
         line-height: 1.5;
@@ -191,7 +191,12 @@ body{
     // .gallery__item
     &__item {
         position: relative;
+        max-width: 964px;
+        width: 100%;
+        overflow: hidden;
         img{
+            width: 100%;
+            height: 100%;
             object-fit: cover;
         }
     }
@@ -688,11 +693,11 @@ body{
 }
 
 
-// ----------------- INSPIRATION ----------- //
+// ----------------- services ----------- //
 
-.inspiration {
-    background: #fcf8f3;
-    // .inspiration__content
+.services {
+    background-color: #352F44;
+    // .services__content
     &__control{
         position: absolute;
         left: 0;
@@ -719,28 +724,28 @@ body{
             flex: 1 0 100%;
         }
     }
-    // .inspiration__title
+    // .services__title
     &__title {
         font-weight: 700;
         line-height: 1.2;
-        color: $color---gray-1;
+        color: $color---gray-5;
         margin: 0 0 8px 0;
     }
-    // .inspiration__text
+    // .services__text
     &__text {
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
-        color: $color---gray-2;
+        color: $color---gray-4;
 
         &:not(:last-child){
             margin: 0 0 24px 0;
         }
     }
-    // .inspiration__more
+    // .services__more
     &__more {
         display: block;
-        background: $color---primary;
+        background: $color---green-accents-link;
         font-weight: 600;
         font-size: 16px;
         line-height: 1.5;
@@ -753,11 +758,11 @@ body{
         justify-content: center;
         align-items: center;
     }
-    // .inspiration__ideas
+    // .services__ideas
     &__ideas {
         min-height: 582px;
     }
-    // .inspiration__idea
+    // .services__idea
     &__idea {
     }
     &__row{
@@ -841,6 +846,7 @@ body{
 
 .tips {
     padding: 44px 0;
+    background-color: #352F44;
     // .tips__row
     &__row {
 
@@ -848,6 +854,7 @@ body{
     // .tips__title
     &__title {
         text-align: center;
+        color: $color---gray-5;
     }
     // .tips__column
     &__column {
@@ -883,14 +890,14 @@ body{
 
     &__information{
         padding: 16px;
-        background-color: #fff;
+        background-color: $color---primary;
     }
     // .item-tip__title
     &__title {
         font-weight: 600;
         font-size: 24px;
         line-height: 1.2;
-        color: $color---gray-1;
+        color: $color---gray-5;
         &:not(:last-child){
             margin: 0 0 8px 0;
         }
@@ -907,6 +914,7 @@ body{
 
 .share {
     // .share__row
+    background-color: #352F44;
     &__row {
         display: flex;
         align-items: center;
@@ -914,19 +922,25 @@ body{
         &_g{
 
         }
+        img{
+            max-height: 470px;
+            max-width: 674px;
+           
+        }
     }
     // .share__text
     &__text {
         font-weight: 600;
         font-size: 20px;
         line-height: 1.5;
-        color: $color---gray-2;
+        color: $color---gray-4;
         &:not(:last-child){
             margin: 0 0 8px 0;
         }
     }
     // .share__title
     &__title {
+        color: $color---gray-5;
     }
     // .share__column
     &__column {
@@ -948,6 +962,10 @@ body{
         }
         &_btm{
             align-items: flex-start;
+        }
+        img{
+            max-width: 674px;
+            object-fit: cover;
         }
     }
 }

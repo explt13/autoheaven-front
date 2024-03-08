@@ -3,11 +3,8 @@ export const products = () => {
     
     
     const productsList = [
-        {img: 'product_5', alt: 'product-night-lamp', title: 'Grifo', desc: 'Night lamp', price: "1500000", mod: null, discount: null},
-        {img: 'product_6', alt: 'product-small-mug', title: 'Muggo', desc: 'Small mug', price: '150000', mod: 'new', discount: null},
-        {img: 'product_7', alt: 'product-bed-set', title: 'Pingky', desc: 'Cute bed set', price: '14000000', mod: 'discount', discount: "50"},
-        {img: 'product_8', alt: 'product-flower-pot', title: 'Potty', desc: 'Minimalist flower pot', price: '500000', mod: 'new', discount: null},
-        {img: 'main_gallery_1', alt: 'product-flower-pot', title: 'Sofa', desc: 'Luxury big sofa 2-seat', price: '17000000', mod: 'new', discount: null},
+        {img: 'product_5', alt: 'gear', title: 'Gear', desc: '6-step', price: "178.94", mod: 'new', discount: null},
+        {img: 'product_6', alt: 'battery', title: 'Battery', desc: '3.7v', price: '720', mod: 'new', discount: null},
     ]
 
     const splitNum = (number) => {
@@ -25,7 +22,7 @@ export const products = () => {
         const discPrice = (price - (price * (discValue * 0.01)));
         
         $(this).find('.item-product__price').attr('data-price', splitNum(discPrice));
-        $(this).find('.item-product__price').after(`<span class="item-product__disc">Rp ${splitNum(price)}</span>`)
+        $(this).find('.item-product__price').after(`<span class="item-product__disc">$ ${splitNum(price)}</span>`)
     })
 
     const mql = window.matchMedia('(hover: hover)');
@@ -62,7 +59,7 @@ export const products = () => {
                         <div class="item-product__information">
                             <h4 class="item-product__title">${productsList[i].title}</h4>
                             <div class="item-product__desc">${productsList[i].desc}</div>
-                            <div class="item-product__price" data-price=${productsList[i].price}>Rp </div>
+                            <div class="item-product__price" data-price=${productsList[i].price}>$ </div>
                         </div>
                         <div class="item-product__overlay">
                             <a class="item-product__buy">Add to cart</a>

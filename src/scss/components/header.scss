@@ -37,6 +37,7 @@
         font-size: 24px;
         color: #000;
         margin: 0 40px 0 0;
+        
     }
     // .header__menu
     &__menu {
@@ -152,6 +153,9 @@
 
         &_sub{
             color: #fff;
+            &:hover{
+                color: $color---green-accents!important;
+            }
         }
 
         &:hover{
@@ -178,7 +182,7 @@
         }
         &:hover::after{
            
-            filter: invert(97%) sepia(7%) saturate(6010%) hue-rotate(304deg) brightness(91%) contrast(100%);
+            filter: invert(29%) sepia(71%) saturate(368%) hue-rotate(195deg) brightness(93%) contrast(93%);
            
         }
     }
@@ -365,7 +369,7 @@
         cursor: pointer;
         &:hover{
             color: $color---primary;
-            filter: invert(97%) sepia(7%) saturate(6010%) hue-rotate(304deg) brightness(91%) contrast(100%);
+            filter: invert(29%) sepia(71%) saturate(368%) hue-rotate(195deg) brightness(93%) contrast(93%);
         }
     }
     // .user-menu__cart
@@ -373,7 +377,7 @@
         cursor: pointer;
         &:hover{
             color: $color---primary;
-            filter: invert(97%) sepia(7%) saturate(6010%) hue-rotate(304deg) brightness(91%) contrast(100%);
+            filter: invert(29%) sepia(71%) saturate(368%) hue-rotate(195deg) brightness(93%) contrast(93%);
         }
     }
     // .user-menu__avatar
@@ -383,7 +387,9 @@
         height: 40px;
         img{
             object-fit: cover;
+            height: 100%;
             width: 100%;
+            border-radius: 100%;
         }
     }
 }
